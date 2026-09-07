@@ -12,7 +12,7 @@ pipeline {
             steps {
                 git (
                     url: 'https://github.com/mrinalghimire714/justchill.git'
-                    branch: 'main',
+                    branch: 'master',
                     credentialsId: '51334830-6e38-4cc0-9762-4cf253d421c4'
                 )
             }
