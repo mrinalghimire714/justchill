@@ -13,7 +13,7 @@ pipeline {
                 git (
                     url: 'https://github.com/mrinalghimire714/justchill.git'
                     branch: 'main',
-                    credentialsId: 'e0a5f626-68bf-4696-bea8-2d9e833f6753'  
+                    credentialsId: '51334830-6e38-4cc0-9762-4cf253d421c4'
                 )
             }
         }
