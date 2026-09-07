@@ -3,11 +3,11 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-DOG_API = "https://dog.ceo/api/breeds/image/random"
+DOG_API = "https://dog.ceo/api/breeds/image/random" 
 
 @app.route("/")
 def home():
-    return "Welcom to the public API Demo"
+    return "Welcome to the public API Demo"
 
 @app.route("/dog")
 def dog():
@@ -23,7 +23,7 @@ def dog():
     
 @app.route("/dog/html")
 def dog_html():
-    response = requests.get(DOG_API)
+    response = requests.get("https://dog.ceo/api/breeds/image/random")
     if response.status_code == 200:
         data = response.json()
         return f"<h1>Random Dog</h1><img src='{data{'message'}}'/>"
